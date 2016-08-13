@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>diorite-shared</artifactId>
+        <groupId>org.diorite.shared</groupId>
+        <version>1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shared-core</artifactId>
+    <version>0.1</version>
+    <name>Diorite Shared Core</name>
+
+    <properties>
+        <version.shared.core>${project.version}</version.shared.core>
+        <build.version.raw>${version.shared.core}</build.version.raw>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.diorite.shared</groupId>
+            <artifactId>shared-api</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

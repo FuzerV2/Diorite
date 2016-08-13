@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>diorite-utils</artifactId>
+        <groupId>org.diorite.utils</groupId>
+        <version>1</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>pipeline</artifactId>
+    <version>1.0</version>
+    <name>Diorite Pipeline</name>
+
+    <properties>
+        <version.utils.pipeline>${project.version}</version.utils.pipeline>
+        <build.version.raw>${version.utils.pipeline}</build.version.raw>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.diorite.utils</groupId>
+            <artifactId>commons</artifactId>
+        </dependency>
+    </dependencies>
+</project>

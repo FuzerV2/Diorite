@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>build</artifactId>
+        <groupId>org.diorite.build</groupId>
+        <version>1</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>build-server</artifactId>
+    <packaging>pom</packaging>
+    <name>Build Server</name>
+
+    <modules>
+        <module>../../utils</module>
+        <module>../../shared</module>
+        <module>../../diorite</module>
+        <module>../../server</module>
+        <module>../../launcher/api</module>
+        <module>../../launcher/core</module>
+        <module>../../launcher/server</module>
+    </modules>
+
+</project>

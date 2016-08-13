@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>diorite-plugins</artifactId>
+        <groupId>org.diorite.plugins</groupId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>server-plugin-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>Diorite Server Plugin Parent</name>
+    <modules>
+        <module>../tutorial-plugin</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.diorite.server</groupId>
+            <artifactId>server-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

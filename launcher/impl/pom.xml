@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>diorite-launcher</artifactId>
+        <groupId>org.diorite.launcher</groupId>
+        <version>indev-0.1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>launcher-impl</artifactId>
+    <packaging>pom</packaging>
+    <name>Launcher Implementation Parent</name>
+    <modules>
+        <module>../server</module>
+        <module>../client</module>
+        <module>../proxy</module>
+    </modules>
+
+    <properties>
+        <module></module>
+        <finalName>${project.name}-${project.version}</finalName>
+        <version.launcher.proxy>${project.version}</version.launcher.proxy>
+        <build.version.raw>${version.launcher.proxy}</build.version.raw>
+    </properties>
+
+    <dependencies>
+        <!--====================================================-->
+        <!--Think twice before you add any library to launcher! -->
+        <!--    Launcher must be small - simple to download!    -->
+        <!--====================================================-->
+
+        <dependency>
+            <groupId>org.diorite.launcher</groupId>
+            <artifactId>launcher-core</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.diorite.launcher.server.Main</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <Built-By>Diorite</Built-By>
+                            <Created-By>GotoFinal</Created-By>
+                            <Implementation-Vendor>Diorite</Implementation-Vendor>
+                            <Specification-Vendor>Diorite</Specification-Vendor>
+                            <Sealed>false</Sealed>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

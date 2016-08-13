@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>diorite-shared</artifactId>
+        <groupId>org.diorite.shared</groupId>
+        <version>1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shared-api</artifactId>
+    <version>0.1</version>
+    <name>Diorite Shared API</name>
+
+    <properties>
+        <version.shared.api>${project.version}</version.shared.api>
+        <build.version.raw>${version.shared.api}</build.version.raw>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.diorite.utils</groupId>
+            <artifactId>commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.diorite.utils</groupId>
+            <artifactId>config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.diorite.utils</groupId>
+            <artifactId>others</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+        </dependency>
+    </dependencies>
+</project>
